@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "FixQwant",
+  "version": "1.0",
+
+  "description": "Changes the background of Qwant Lite to a darker color.",
+
+  "icons": {
+    "48": "icons/Q.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://lite.qwant.com/*"],
+      "js": ["fixQwant.js"]
+    }
+  ]
+
+}
